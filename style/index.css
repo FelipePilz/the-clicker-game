@@ -10,6 +10,7 @@ body{
     background: rgb(253, 239, 222);
     text-align: center;
 }
+
 .clicker-title{
     padding: 50px;
     color: rgb(92, 90, 90);
@@ -33,16 +34,27 @@ body{
 }
 
 .clicker-button{
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.493);
     cursor: pointer;
     margin: 25px;
-    background: transparent;
     border: none;
+    background: transparent;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.493);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/computer-1751683-1489579.png");
+}
+
+.clicker-button:active{
+    background-size: 80%;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.493);
 }
 
 .clicker-image{
-    height: 200px;
+    height: 15em;
 }
 
 
@@ -70,7 +82,7 @@ body{
 
 .clicker-store-button-internet{
     background: transparent;
-    background-size: 75%;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("https://lh3.googleusercontent.com/proxy/X2ekZ5A_cCJjan5HatQM0uJiIbQm-I3WwIn1_WlmFulw8ccDMzwJ67E73tFVFq6Zr0BnVmmBV43GmNCk89qTcW-udnBPhLX8fzQhwR35Yx8EO8YRbiiUtUdx3CGXIUwm4Vk9tvl1MyzQuOsEdRIX0vyQcwUDB3g");
@@ -78,7 +90,7 @@ body{
 
 .clicker-store-button-energyDrink{
     background: transparent;
-    background-size: 80%;
+    background-size: 79%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("https://zorbianhot.is/wp-content/uploads/2020/11/energy-drink-zorbian.png");
@@ -112,18 +124,66 @@ body{
     filter: grayscale(100%);
 }
 
+.clicker-wrapper-store div button:active{
+    background-size: 75%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.493);
 
-
-
-
-
-
-
-
-
-
+}
 
 .clicker-wrapper-store > div{
     width: 25%;
     text-align: center;
 }
+
+
+
+
+/* TABLET CSS */
+@media screen and (max-width: 1400px){
+    .clicker-title{
+        padding: 10px;
+        padding-bottom: 0;
+        color: rgb(92, 90, 90);
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .clicker-wrapper{
+        margin: 20px;
+    }
+
+    .clicker-wrapper-store div{
+        width: 50%;
+        padding-bottom: 25px;
+        padding-top: 15px;
+    }
+}
+
+
+/* PHONE CSS */
+@media screen and (max-width: 700px){
+    .clicker-title{
+        padding: 25px;
+        color: rgb(92, 90, 90);
+        font-weight: bold;
+        font-size: 50px;
+    }
+    
+    .clicker-wrapper{
+        margin: 20px;
+    }
+    
+    
+    .clicker-wrapper-store div{
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 5px;
+    }
+}
+
+
+/* KINDA RESPOSIVE IF minus 300px*/
+@media screen and (max-width: 300px) {
+    body {
+        min-width: 300px;
+    }
+  }
