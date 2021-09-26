@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:bisque;
+    font-family: 'Roboto';
+}
+
+body{
+    background: rgb(253, 239, 222);
+    text-align: center;
+}
+.clicker-title{
+    padding: 50px;
+    color: rgb(92, 90, 90);
+    font-weight: bold;
+    font-size: 50px;
+}
+.clicker-wrapper{
+    margin: 150px 250px;
+    margin-top: 0;
+    background: rgba(0, 61, 53, 0.432);
+    border-radius: 25px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.493);
+}
+
+.clicker-container{
+    text-align: center;  
+}
+
+.clicker-overall{
+    padding-top: 15px;
+}
+
+.clicker-button{
+    cursor: pointer;
+    margin: 25px;
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.493);
+}
+
+.clicker-image{
+    height: 200px;
+}
+
+
+/* CLICKER STORE */
+
+.clicker-wrapper-store{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 3px solid rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.clicker-wrapper-store div p{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.clicker-store-title{
+    text-align: center;
+}
+
+
+.clicker-store-button-internet{
+    background: transparent;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://lh3.googleusercontent.com/proxy/X2ekZ5A_cCJjan5HatQM0uJiIbQm-I3WwIn1_WlmFulw8ccDMzwJ67E73tFVFq6Zr0BnVmmBV43GmNCk89qTcW-udnBPhLX8fzQhwR35Yx8EO8YRbiiUtUdx3CGXIUwm4Vk9tvl1MyzQuOsEdRIX0vyQcwUDB3g");
+}
+
+.clicker-store-button-energyDrink{
+    background: transparent;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://zorbianhot.is/wp-content/uploads/2020/11/energy-drink-zorbian.png");
+}
+
+.clicker-store-button-keyboard{
+    background: transparent;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Question_mark3.svg/1200px-Question_mark3.svg.png");
+}
+
+.clicker-store-button-database{
+    background: transparent;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Question_mark3.svg/1200px-Question_mark3.svg.png");
+}
+
+
+
+.clicker-wrapper-store div button{
+    border: none;
+    height: 150px;
+    width: 150px;
+    margin: 15px 35px;
+    border-radius: 100%;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.493);
+    filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.clicker-wrapper-store > div{
+    width: 25%;
+    text-align: center;
+}

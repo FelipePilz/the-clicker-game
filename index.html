@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/index.css"></link>
+        <title>Clicker</title>
+    </head>
+    <body>
+        <div>
+            <h1 class="clicker-title">THE CLICKER</h1>
+        </div>
+        
+        <section class="clicker-wrapper">
+            
+            <div class="clicker-container">
+                <h2 class="clicker-overall" id="clicker-overall">Clicks: 0</h2>
+                <h3 class="clicker-acps" id="clicker-acps"></h3>
+                <button class="clicker-button" onclick="mainClick(false)">
+                    <img class="clicker-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1200px-Circle-icons-computer.svg.png">
+                </button>        
+            </div>
+            <h2>CLICKER STORE</h2>
+            <div class="clicker-wrapper-store">
+                <div>
+                    <p id="clicker-internet-quantity">0</p>
+                    <h3 class="clicker-store-title" id="internet-price">Internet: <br>15 Clicks</h3>
+                    <button class="clicker-store-button-internet" id="clicker-store-button-internet" onclick="buyInternet()" disabled></button>
+                </div>
+                <div>
+                    <p id="clicker-energyDrink-quantity">0</p>
+                    <h3 class="clicker-store-title" id="energyDrink-price">Energy Drink: <br>100 Clicks</h3>
+                    <button class="clicker-store-button-energyDrink" id="clicker-store-button-energyDrink" onclick="buyEnergyDrink()" disabled></button>
+                </div>
+                <div>
+                    <p id="clicker-keyboard-quantity">0</p>
+                    <h3 class="clicker-store-title" id="keyboard-price">? <br>800 Clicks</h3>
+                    <button class="clicker-store-button-keyboard" id="clicker-store-button-keyboard" onclick="buyKeyboard()" disabled></button>
+                </div>
+                <div>
+                    <p id="clicker-database-quantity">0</p>
+                    <h3 class="clicker-store-title" id="database-price">? <br>2000 Clicks</h3>
+                    <button class="clicker-store-button-database" id="clicker-store-button-database" onclick="buyDatabase()" disabled></button>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+    </body>
+    <!--Usando script no final da pagina-->
+    <script src="script/index.js"></script>
+    <!---->
+</html>
