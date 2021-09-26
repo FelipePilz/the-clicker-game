@@ -1,4 +1,4 @@
-var clicks = 0;
+var clicks = 5000;
 
 var internet = {
     price: 15,
@@ -7,13 +7,13 @@ var internet = {
 }
 
 var energyDrink = {
-    price: 100,
+    price: 150,
     quantity: 0,
     cps: 0
 }
 
 var keyboard = {
-    price: 800,
+    price: 900,
     quantity: 0,
     cps: 0
 }
@@ -24,12 +24,12 @@ var database = {
 }
 
 function addCPS(){
-    internet.cps = internet.quantity * 1;  // 1 cps per internet
-    energyDrink.cps = energyDrink.quantity * 3; // 3 cps per internet
-    keyboard.cps = keyboard.quantity * 6;   // 6 cps per internet
-    database.cps = database.quantity * 10; // 10 cps per database
+    internet.cps = internet.quantity * 0.2;  // 1 cps per internet
+    energyDrink.cps = energyDrink.quantity * 2; // 3 cps per internet
+    keyboard.cps = keyboard.quantity * 3.5;   // 6 cps per internet
+    database.cps = database.quantity * 6.2; // 10 cps per database
     clicks += internet.cps + energyDrink.cps + keyboard.cps + database.cps;// final cps
-    document.getElementById("clicker-overall").innerHTML = "Clicks: "+clicks;
+    document.getElementById("clicker-overall").innerHTML = clicks.toFixed(1) + " Clicks";
     
     setTimeout(addCPS, 1000);
     mainClick(true);
@@ -43,9 +43,9 @@ function mainClick(fixBug){
     }else{
         clicks++;
     }
-    document.getElementById("clicker-overall").innerHTML = "Clicks: "+clicks;
+    document.getElementById("clicker-overall").innerHTML = clicks.toFixed(1) + " Clicks";
     //Calculate ACPS - AUTOMATED CLICKS PER SECOND
-    document.getElementById("clicker-acps").innerHTML = ((internet.quantity * 1)+(energyDrink.quantity * 3)+(keyboard.quantity * 6) + (database.quantity * 10)) +" - ACPS" //YES I KNOW, BUT IT INSTANTLY REPLACE THE CURRENT CPS, SOOOOOOO yeah ;)
+    document.getElementById("clicker-acps").innerHTML = ((internet.quantity * 0.2)+(energyDrink.quantity * 2)+(keyboard.quantity * 3.5) + (database.quantity * 6.5)).toFixed(1) +" - ACPS" //YES I KNOW, BUT IT INSTANTLY REPLACE THE CURRENT CPS, SOOOOOOO yeah ;)
     
 
     //SHOW KEYBOARD
@@ -114,7 +114,7 @@ function mainClick(fixBug){
 
 function buyInternet(){
     clicks -= internet.price;
-    internet.price *= 1.2;
+    internet.price *= 1.5;
     internet.price = internet.price.toFixed(0); //round up the price
     document.getElementById("internet-price").innerHTML = "Internet: <br>"+internet.price+" Clicks";
     internet.quantity ++;
@@ -124,7 +124,7 @@ function buyInternet(){
 
 function buyEnergyDrink(){
     clicks -= energyDrink.price;
-    energyDrink.price *= 1.5;
+    energyDrink.price *= 1.8;
     energyDrink.price = energyDrink.price.toFixed(0); //round up the price
     document.getElementById("energyDrink-price").innerHTML = "Energy Drink: <br>"+energyDrink.price+" Clicks";
     energyDrink.quantity ++;
@@ -134,7 +134,7 @@ function buyEnergyDrink(){
 
 function buyKeyboard(){
     clicks -= keyboard.price;
-    keyboard.price *= 1.9;
+    keyboard.price *= 2;
     keyboard.price = keyboard.price.toFixed(0); //round up the price
     document.getElementById("keyboard-price").innerHTML = "Energy Drink: <br>"+keyboard.price+" Clicks";
     keyboard.quantity ++;
