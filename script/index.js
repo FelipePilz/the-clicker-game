@@ -1,4 +1,4 @@
-var clicks = 5000;
+var clicks = 0;
 
 var internet = {
     price: 15,
@@ -52,7 +52,7 @@ function mainClick(fixBug){
     var showKeyboard = false;
     if(clicks >= 600 && showKeyboard == false){
         document.getElementById("keyboard-price").innerHTML = "Keyboard: <br>"+keyboard.price+" Clicks";
-        document.getElementById("clicker-store-button-keyboard").style.backgroundImage = "url(https://cdn3.iconfinder.com/data/icons/ikooni-flat-devices-technologies/128/devices-18-512.png)"
+        document.getElementById("clicker-store-button-keyboard").style.backgroundImage = "url(../assets/keyboard.png)"
         showKeyboard = true;
     }
 
@@ -60,7 +60,7 @@ function mainClick(fixBug){
     var showDatabase = false;
     if(clicks >= 1700 && showDatabase == false){
         document.getElementById("database-price").innerHTML = "Database: <br>"+database.price+" Clicks";
-        document.getElementById("clicker-store-button-database").style.backgroundImage = "url(https://cdn.iconscout.com/icon/free/png-256/setting-database-4-1118521.png)"
+        document.getElementById("clicker-store-button-database").style.backgroundImage = "url(../assets/database.png)"
         showDatabase = true;
     }
  //////////////////////////////////////////////////////////////   
